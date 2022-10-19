@@ -1,14 +1,14 @@
-# Documentation
+# Documentation #
 
 The project is built per recommendation/specification with create-react-app. 
 You compile it with  `npm run start`
 
 Some notes:
 
-###Stack used:
+###Stack used:###
 React, Typescript, Styled Components
 
-###Project structure:
+###Project structure:###
 All the components are under the `/components/` folder.
 
 `src/components/Core` contain a custom created modular first styled-components/types library I've built a while ago 
@@ -21,7 +21,7 @@ function to explain better what they do. Product component is built entirely fro
 `/src/data` contains some hardcoded data needed for the product. (Json file and the theme styling module)
 
 
-###Some extra notes:
+###Some extra notes:###
 I didn't had time to focus on Storybook and Testing, at least within the time-limit. I've relied on type checking at the
 moment since the data is hardcoded and we don't have an api/external data.
 
