@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {
     Col,
     Container,
@@ -128,11 +128,11 @@ const Product = () => {
                             return (
                                 <React.Fragment>
                                     <List key={item.id}>{beautifyTypes(item.type)}: {item.label}</List>
-                                    <HR color='lightgrey' spacingBottom={1}/>
+                                    <HR key={item.value} color='lightgrey' spacingBottom={1}/>
                                 </React.Fragment>
                             )
                         })}
-                        <List key={summary[0]['price']}>Price: {summary[0]['price']}</List>
+                        <List key={summary[0]['price']}>Price: £{summary[0]['price']}</List>
                     </ListParent>
                 </Col>
             </Row>
